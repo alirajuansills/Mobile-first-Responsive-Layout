@@ -18,6 +18,8 @@ body {
 .main-nav {
     margin-top: 1.5em;
 }
+
+
 .wrapper {
     display: block;
     color: black;
@@ -32,10 +34,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-.navbar a {
-    background-color: white;
-
-}
 ul li {
     margin: 0;
     padding: 0;
@@ -45,9 +43,17 @@ a {
     color: black;
     text-decoration: none;
     font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+a:link {
+    background-color: white;
+}
+.portfolio-container {
+    text-align: center;
 }
 .profile-picture {
-
+    
 }
 .portfolio-bio {
     float: left;
@@ -56,11 +62,28 @@ a {
 .portfolio-title {
     text-align: center;
 }
-.skills {
+.skills-container {
+    display: inline-block;
+    margin: 20px;
     background-color: rgb(255, 255, 255);
+}
+.skills {
     width: 100%;
-    display: flex;
     justify-content: space-between;
+}
+.main-img {
+    max-width: auto;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.frame {
+    width: 250px;
+    height: 250px;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    position: relative;
 }
 .contact {
     text-align: center;

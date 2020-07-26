@@ -18,7 +18,9 @@ body {
 .main-nav {
     margin-top: 1.5em;
 }
-
+.home {
+    padding: 10px 100px 10px 100px;
+}
 
 .wrapper {
     display: block;
@@ -48,12 +50,10 @@ a {
 }
 a:link {
     background-color: white;
+    position: relative;
 }
 .portfolio-container {
     text-align: center;
-}
-.profile-picture {
-    
 }
 .portfolio-bio {
     float: left;
@@ -89,7 +89,22 @@ a:link {
     text-align: center;
 }
 /* Footer */
-
+.footer-nav {
+    position: relative;
+    overflow: hidden;
+}
+.footer-nav li {
+    list-style-type: none;
+}
+.footer-nav .hidden {
+    display: none;
+}
+.mobile-footer {
+    float: left;
+}
+.mobile-footer-too {
+    float: right;
+}
 /* Mobile First */
 @media (min-width: 768px) {
     

@@ -48,17 +48,26 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-a:link {
+/* a:link {
     background-color: white;
     position: relative;
-}
+} */
 .portfolio-container {
+    position: relative;
     text-align: center;
 }
 .portfolio-bio {
     float: left;
 }
 /* Main */
+main {
+    display: grid;
+    place-items: center;
+}
+p {
+    line-height: 20px;
+    margin: 30px;
+}
 .portfolio-title {
     text-align: center;
 }
@@ -66,10 +75,13 @@ a:link {
     display: inline-block;
     margin: 20px;
     background-color: rgb(255, 255, 255);
+    width: 100%;/* spans the background across the entire page*/
+    place-items: center;
 }
 .skills {
     width: 100%;
     justify-content: space-between;
+    vertical-align: middle;
 }
 .main-img {
     max-width: auto;
@@ -87,8 +99,16 @@ a:link {
 }
 .contact {
     text-align: center;
+    margin: 30px;
+    line-height: 20px;
+}
+hr {
+    color: gray;
 }
 /* Footer */
+.main-footer {
+    margin: 20px;
+}
 .footer-nav {
     position: relative;
     overflow: hidden;
@@ -107,5 +127,8 @@ a:link {
 }
 /* Mobile First */
 @media (min-width: 768px) {
+    
+}
+@media (min-width: 1024px) {
     
 }

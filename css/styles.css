@@ -9,7 +9,7 @@ body {
     background-color: rgb(223, 223, 223);
     font-size: 16px;
     margin: 0;
-    font-family: 'Red Rose''Courier New', Courier, monospace;
+    font-family: "Red Rose", "Courier New", Courier, monospace;
     line-height: 50px;
     place-items: center;
 }
@@ -17,10 +17,9 @@ main {
     display: grid;
     place-items: center;
 }
-
 p {
-    line-height: 30px;
-    margin: 30px;
+    line-height: 25px;
+    margin: 10px;
     text-align: center;
 }
 /* Header */
@@ -32,7 +31,7 @@ p {
 }
 
 .wrapper {
-    display: block;
+    /* display: block; */
     color: black;
     font-size: 1.125em;
     text-align: center;
@@ -50,7 +49,6 @@ p {
 
 ul {
     list-style-type: none;
-    padding-inline-start: 0px;
 }
 a {
     color: black;
@@ -58,7 +56,7 @@ a {
 }
 
 .portfolio-container {
-    position: relative;
+    /* position: relative; */
     text-align: center;
 }
 .profile-picture{
@@ -91,17 +89,17 @@ a {
     /* overflow: auto;   */
 }
 .main-img {
-    /* max-width: auto; */
+    max-width: auto;
     max-height: 100%;
     /* display: block; */
 }
 .frame {
-    /* width: 30%; */
+    /* width: 0 auto; */
     height: 200px;
     /* vertical-align: middle; */
     text-align: center;
     display: table-cell;
-    position: relative;
+    /* position: relative; */
     /* overflow: auto; */
 }
 .contact {
@@ -119,9 +117,8 @@ hr {
     margin: 20px;
 }
 .footer-nav {
-    position: relative;
-    overflow: hidden;
-    /* float: left; */
+    /* position: relative; */
+    /* overflow: hidden; */
 }
 .footer-nav li {
     list-style-type: none;
@@ -135,12 +132,7 @@ hr {
     float: right;
     font-weight: 800;
 }
-/* Float Clearfix */
-.group:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 /* Mobile First */
 @media (max-width: 767px) {
     .footer-nav .hidden {
@@ -168,26 +160,23 @@ hr {
         vertical-align: middle;
         overflow: auto;
     }
-    
-    .skills-container {
-        margin: auto 0;
-        /* display: inline-block; */
+    .frame {
+        float: left;
+    }
+    .marketing,
+    .search
+    .travel,
+    .map,
+    .gallery,
+    .calc {
+        width: 50%;
     }
     .main-nav li {
         display: inline-block;
         width: 20%;
     }
-    .marketing {
-        float: left;
-    }
-    .search {
-        float: right;
-    }
-    .travel {
-        float: left;
-    }
-    .map {
-        float: right;
+    .skills-container {
+        margin: auto 0;
     }
     .footer-nav li {
         display: inline-block;
@@ -197,13 +186,20 @@ hr {
         font-weight: 800;
         /* width: 25%; */
         text-transform: uppercase;
+        float: right;
     }
     .responsive-footer {
-        float: right;
+        /* float: right; */
     }
     .mobile-footer-too {
         display: none;
     }
+    /* Float Clearfix */
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
     
 }
 @media (min-width: 1024px) {
@@ -217,5 +213,13 @@ hr {
     }
     .navbar {
         float: right;
+    }
+    .marketing,
+    .search,
+    .travel,
+    .map,
+    .gallery,
+    .calc {
+        width: 33.33%;
     }
 }

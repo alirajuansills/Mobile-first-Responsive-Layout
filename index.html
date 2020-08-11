@@ -16,7 +16,7 @@
             <nav class="navbar">
                 <ul class="main-nav">
                     <li class="home"><a href="index.html">Home</a></li>
-                    <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+                    <li class="portfolio"><a href="#projects">Portfolio</a></li>
                     <li class="contact-section"><a href="#contact-section">Contact</a></li>
                 </ul>
             </nav>
@@ -25,14 +25,14 @@
         <div class="portfolio-container">
                 
                 <img src="images/profile.png" alt="Profile Picture" class="profile-picture">
-                <p class="portfolio-bio group"></p>
+                <p class="portfolio-bio group">
                 Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning
                 front-end web development at Treehouse and am excited to put all my skills to use!</p> 
         </div>
         
     </header>
     <main>
-        <div class="skills-container clear">
+        <div class="skills-container clearfix">
                 <div id="projects" class="skills">
                     <h1 class="portfolio-title">Portfolio</h1>
                     <div class="skills-wrapper">
@@ -60,7 +60,6 @@
                                         <p>This project compares travel times based on different transportation 
                                                 methods and tells you the best one.</p>
                                     </div> <!--frame-->
-                                    
                                 </div>
                                 <div class="">
                                     <div class="frame map">
@@ -89,9 +88,10 @@
                     </div>
              </div> <!--Skills-->
         </div>
-        <div id="contact-section" class="contact group">
+    
+        <div id="contact-section" class="contact">
             <h1>Contact</h1>
-            <p>If you are interested in chatting or want more information
+            <p class="contact-paragraph">If you are interested in chatting or want more information
                 about what I've been working on, I'd love to hear from you!
             </p>
             <p>Phone        <b class="tab">+1 (111)555-1234</b></p>
@@ -104,15 +104,14 @@
         <div>
             <nav class="footer-nav">
                 <ul class="responsive-footer">
-                    <li><a href="#" class="mobile-footer">Student Name</a></li>
+                    <li class="mobile-footer"><a href="#">Student Name</a></li>
                     <li><a href="#top" class="mobile-footer-too">BACK TO TOP</a></li>
-                    <li><a href="#" class="hidden">Home</a></li>
-                    <li><a href="#" class="hidden">Portfolio</a></li>
-                    <li><a href="#" class="hidden">Contact</a></li>
+                    <li class="hidden-footer"><a href="#contact-section">Contact</a></li>
+                    <li class="hidden-footer"><a href="#projects">Portfolio</a></li>
+                    <li class="hidden-footer"><a href="indext.html">Home</a></li>
                 </ul>
             </nav>
         </div>
-        
     </footer>
 </body>
 </html>
